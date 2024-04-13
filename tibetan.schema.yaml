@@ -1,11 +1,11 @@
-﻿# Rime schema
+# Rime schema
 # vim: set sw=2 sts=2 et:
 # encoding: utf-8
 
 schema:
   schema_id: tibetan
   name: "藏文"
-  version: "lely 0.4"
+  version: "20210702"
   author:
     - polyhedron<biopolyhedron@gmail.com>
     - Lely<fourseasons4ji@gmail.com>
@@ -22,7 +22,7 @@ switches:
 engine:
   processors:
     - ascii_composer
-    - key_binder
+#    - key_binder
     - speller
     - selector
     - navigator
@@ -35,10 +35,10 @@ engine:
     - table_translator
 
 menu:
-  alternative_select_keys: "ABCEFGHJKM"
+  alternative_select_keys: "ABCEFGJKOP"
 
 speller:
-  alphabet: abcdefghijklmnopqrstuvwxyz,.XTDNSRLI0123456789'
+  alphabet: 'abcdefghijklmnopqrstuvwxyz,.''DHILMNRSTX0123456789()'
   delimiter: ' '
   algebra:
     - derive/a$//
@@ -46,6 +46,3 @@ speller:
 
 translator:
   dictionary: tibetan
-
-key_binder:
-  import_preset: default
